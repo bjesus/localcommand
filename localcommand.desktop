@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Local Command
+Exec=localcommand %U
+Type=Application
+MimeType=x-scheme-handler/cmd;

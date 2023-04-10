@@ -1,0 +1,23 @@
+# These commands will run without asking you to confirm first
+allowed_commands = [
+    "echo",
+    "ls",
+    "date",
+]
+
+# Run the command inside a terminal. You can disable this by commenting it out
+terminal = ["kitty", "--hold"]
+
+[interface]
+# Commands that are not pre-approved require a confirmation.
+# These commands will only run if the confirmation command below exits successfully.
+# %s will be replaced with the command.
+confirmation = "zenity --question --width=400 --title='Confirm Command' --text='Are you sure you want to run %s ?'"
+# You can disable printing your commands output by uncommenting this line (doesn't matter if you run the commands in terminal)
+# display_output = false
+#
+# The output command will present your command stdout. %s will be replaced by stdout. If it's not specified, it will be passed to your command as stdin.
+# stdin example:
+# output = "zenity --text-info --width=600 --height=400 --title='Command Output'"
+# Argument example:
+output = "notify-send 'localcommand result' '%s'"
