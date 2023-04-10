@@ -16,9 +16,26 @@ See [example.toml](example.toml) for configuration reference.
 
 ### Linux
 
-### macOS
+1. Place the binary in your path
+2. Place the [desktop file](localcommand.desktop) in /usr/share/applications
 
-### Windows
+For Arch Linux, use [the AUR package](https://aur.archlinux.org/packages/localcommand).
+
+### Troubleshooting
+
+For Firefox, I had to edit `handlers.json` and add the following under the `schemes` key:
+
+```json
+"cmd": {
+  "action": 2,
+  "handlers": [
+    {
+      "name": "localcommand",
+      "path": "/usr/bin/localcommand"
+    }
+  ]
+},
+```
 
 ## Isn't this dangerous?
 
