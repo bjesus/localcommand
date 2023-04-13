@@ -6,6 +6,12 @@
   <b>Run local commands directly from the web!</b>
 </p>
 
+
+
+https://user-images.githubusercontent.com/55081/231873510-6f81c265-5e18-4462-844b-3214de348822.mp4
+
+
+
 <p align="center">
   <img src="https://img.shields.io/badge/License-MIT-green.svg">
 </p>
